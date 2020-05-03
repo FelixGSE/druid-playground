@@ -29,7 +29,7 @@ RUN wget https://archive.apache.org/dist/druid/KEYS \
 &&  gpg --import KEYS \
 &&  gpg --verify apache-druid-$DRUID_VERSION-bin.tar.gz.asc \
 &&  tar -xzf apache-druid-$DRUID_VERSION-bin.tar.gz 
-&&. mv apache-druid-$DRUID_VERSION $DRUID_HOME \
+&&  mv apache-druid-$DRUID_VERSION $DRUID_HOME \
 &&  mkdir -p $DRUID_RUNTIME_HOME \
              var/tmp \
              $DRUID_RUNTIME_HOME/segments \
